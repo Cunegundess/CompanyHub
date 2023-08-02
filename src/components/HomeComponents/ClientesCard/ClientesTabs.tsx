@@ -14,17 +14,17 @@ export  function ClientesTabs() {
       {
         label: "Ativos",
         value: "active",
-        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        desc: `Empresa A`,
       },
       {
         label: "Inativos",
         value: "inactive",
-        desc: `Quisque euismod justo nec dolor semper, vel elementum dolor congue.`,
+        desc: `Empresa B`,
       },
       {
         label: "Todos",
         value: "all",
-        desc: `Maecenas at bibendum ligula.`,
+        desc: `Empresa C`,
       }
     ];
    
@@ -42,7 +42,7 @@ export  function ClientesTabs() {
             <TabPanel key={value} value={value}>
                 <ul className="w-full flex">
                   <li className="flex items-center w-full border-b-2 border-gray p-4">
-                    <span className="flex-grow">
+                    <span className="flex-grow pr-28">
                       {desc}
                     </span>
                     <ClientesStatus />

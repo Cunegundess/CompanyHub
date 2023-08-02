@@ -7,7 +7,7 @@ export function DocsStatus() {
         variant="ghost"
         color="green"
         size="sm"
-        value="Pago"
+        value="Aprovado"
         icon={
           <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-green-900 content-['']" />
         }
@@ -16,18 +16,9 @@ export function DocsStatus() {
         variant="ghost"
         color="red"
         size="sm"
-        value="Não Pago"
+        value="Negado"
         icon={
           <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-red-900 content-['']" />
-        }
-      />
-      <Chip
-        variant="ghost"
-        color="gray"
-        size="sm"
-        value="Isento"
-        icon={
-          <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-black content-['']" />
         }
       />
     </div>

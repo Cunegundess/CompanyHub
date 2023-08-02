@@ -12,19 +12,19 @@ import { DocsStatus } from "./DocsStatus";
 export  function Docs() {
     const data = [
       {
-        label: "Abertos",
+        label: "Aprovados",
         value: "open",
-        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        desc: `Documentação A`,
       },
       {
-        label: "Fechados",
+        label: "Negados",
         value: "closed",
-        desc: `Quisque euismod justo nec dolor semper, vel elementum dolor congue.`,
+        desc: `Documentação B`,
       },
       {
         label: "Todos",
         value: "all",
-        desc: `Maecenas at bibendum ligula.`,
+        desc: `Documentação C`,
       }
     ];
    
@@ -42,7 +42,7 @@ export  function Docs() {
             <TabPanel key={value} value={value}>
                 <ul className="w-full flex">
                   <li className="flex items-center w-full border-b-2 border-gray p-4">
-                    <span className="flex-grow">
+                    <span className="flex-grow pr-28">
                       {desc}
                     </span>
                     <DocsStatus />
