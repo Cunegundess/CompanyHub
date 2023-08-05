@@ -1,6 +1,20 @@
 <a name="readme-top"></a>
 
-<h1 align="center">CompanyHub</h1>
+<h1 align="center">
+  <br>
+  <a href="http://github.com/Cunegundess/CompanyHub">
+  <img src="./img/construcao.png" 
+  alt="CompayHub" 
+  style="margin-bottom: 10px;">
+  </a>
+  <br>
+  CompanyHub
+  <br>
+</h1>
+
+<h4 align="center">A simple dashboard web app built on top of <a href="https://react.dev/" target="_blank">ReactJS</a>.</h4>
+
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Summary</summary>
@@ -24,32 +38,23 @@
 <!-- Sobre o Projeto -->
 
 <a id="About-the-Project"></a>
-# About the Project
+# About the Project 📜
 
-<h2>Welcome to CompanyHub</h2>
+<h2>Welcome to CompanyHub 👋🏻</h2>
 
-Welcome to **CompanyHub**, a dynamic and collaborative platform designed to streamline and enhance your company's workflow and communication. This open-source project is dedicated to empowering businesses of all sizes by providing a comprehensive suite of tools and features that facilitate efficient project management, seamless team collaboration, and effective communication.
+Welcome to **CompanyHub**, a dynamic and collaborative platform designed to streamline and enhance your company's workflow and communication. This project is dedicated to empowering businesses of all sizes by providing a comprehensive suite of tools and features that facilitate efficient project management, seamless team collaboration, and effective communication.
 
 <img src="./img/Screenshot%20from%202023-08-05%2000-23-56.png" alt="Preview 1">
-
-<div style="display: flex; justify-content: center; align-items: center;">
-   <div style="margin: 10px;">
-      <img src="./img/Screenshot%20from%202023-08-04%2023-23-43.png" alt="Preview 2" width="600">
-   </div>
-   <div style="margin: 10px;">
-      <img src="./img/Screenshot%20from%202023-08-04%2023-23-00.png" alt="Preview 3" width="600">
-   </div>
-</div>
-
+<img src="./img/Screenshot%20from%202023-08-04%2023-23-43.png" alt="Preview 2">
+<img src="./img/Screenshot%20from%202023-08-04%2023-23-00.png" alt="Preview 3">
 
 Whether you're a startup striving for growth, a mid-sized company aiming for efficiency, or an enterprise seeking to optimize operations, **CompanyHub** is your reliable companion. Join us on this exciting journey to revolutionize how businesses collaborate, communicate, and succeed. Explore the potential of **CompanyHub** today and transform the way you work together.
-
 
 </br>
 
 
 <a id="Getting-Started"></a>
-# Getting Started
+# Getting Started 🏁
 
 <a id="Installation"></a>
 ## Installation
@@ -79,14 +84,16 @@ To install and run this project, follow these steps:
 
 <a id="Usage"></a>
 ## Usage
------
 
 The dashboard displays some information about clients and documentation about the clients activity.
+
+You can navigate to the 'Clientes' and 'Docs' sections through the navbar at the top of the page.
+
 
 </br>
 
 <a id="Technologies"></a>
-# Technologies
+# Technologies 🧑🏻‍💻
 
 - <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 - <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
@@ -97,6 +104,6 @@ The dashboard displays some information about clients and documentation about th
 </br>
 
 <a id="Contact"></a>
-# Contact
+# Contact 📨
 
 Lucas Cunegundes - [LinkedIn](https://www.linkedin.com/in/lucas-cunegundes) - lucascsantana6@gmail.com
