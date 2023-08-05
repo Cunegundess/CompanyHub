@@ -1,5 +1,5 @@
 import { PencilIcon } from "@heroicons/react/24/solid";
-import { ArrowDownTrayIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import {
   Card,
   CardHeader,
@@ -9,9 +9,7 @@ import {
   Chip,
   CardFooter,
   Avatar,
-  IconButton,
   Tooltip,
-  Input,
 } from "@material-tailwind/react";
 import spotifyLogo from "../assets/spotify.png";
 import netflixLogo from "../assets/netflix.png";
