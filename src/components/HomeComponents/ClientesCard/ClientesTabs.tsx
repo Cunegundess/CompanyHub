@@ -1,57 +1,82 @@
+// import { DocsStatus } from "./DocsStatus";
 import {
-    Tabs,
-    TabsHeader,
-    TabsBody,
-    Tab,
-    TabPanel,
-    Button,
-  } from "@material-tailwind/react";
+  Card,
+  Typography,
+  CardBody,
+  Chip,
+  Avatar
+} from "@material-tailwind/react";
 
-import { ClientesStatus } from "./ClientesChips";
-   
-export  function ClientesTabs() {
-    const data = [
-      {
-        label: "Ativos",
-        value: "active",
-        desc: `Empresa A`,
-      },
-      {
-        label: "Inativos",
-        value: "inactive",
-        desc: `Empresa B`,
-      },
-      {
-        label: "Todos",
-        value: "all",
-        desc: `Empresa C`,
-      }
-    ];
-   
-    return (
-      <Tabs value="all">
-        <TabsHeader>
-          {data.map(({ label, value }) => (
-            <Tab key={value} value={value}>
-              {label}
-            </Tab>
-          ))}
-        </TabsHeader>
-        <TabsBody>
-          {data.map(({ value, desc }) => (
-            <TabPanel key={value} value={value}>
-                <ul className="w-full flex">
-                  <li className="flex items-center w-full border-b-2 border-gray p-4">
-                    <span className="flex-grow pr-28">
-                      {desc}
-                    </span>
-                    <ClientesStatus />
-                    <Button className="ml-5" size="sm">Editar</Button>
-                  </li>
-                </ul>
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
-    );
+import spotifyLogo from "../../../assets/spotify.png";
+import netflixLogo from "../../../assets/netflix.png";
+import amazonLogo from "../../../assets/amazon.png";
+
+const TABLE_ROWS = [
+  {
+    img: spotifyLogo,
+    name: "Spotify",
+    status: true,
+  },
+  {
+    img: amazonLogo,
+    name: "Amazon",
+    status: false,
+  },
+  {
+    img: netflixLogo,
+    name: "Netflix",
+    status: false,
+  },
+];
+
+export function ClientesTabs() {
+  return (
+    <Card className="w-full h-full flex justify-center bg-gray-50">
+      <CardBody className="px-0">
+        {/* Table without the container */}
+        <table className="w-full min-w-max table-auto text-left">
+          <tbody>
+            {TABLE_ROWS.map(({ img, name, status }, index) => {
+              const isLast = index === TABLE_ROWS.length - 1;
+              const classes = isLast
+                ? "p-4"
+                : "p-4 border-b border-blue-gray-50";
+
+              return (
+                <tr key={name}>
+                  <td className={classes}>
+                    <div className="flex items-center gap-3">
+                      <Avatar
+                        src={img}
+                        alt={name}
+                        size="md"
+                        className="border border-blue-gray-50 bg-blue-gray-50/50 object-contain p-1"
+                      />
+                      <Typography
+                        variant="small"
+                        color="blue-gray"
+                        className="font-bold"
+                      >
+                        {name}
+                      </Typography>
+                    </div>
+                  </td>
+                  <td className={classes}>
+                    <div className="w-max ml-10">
+                      <Chip
+                        variant="ghost"
+                        size="sm"
+                        value={status ? "Ativo" : "Inativo"}
+                        color={status ? "green" : "red"}
+                      />
+                    </div>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </CardBody>
+    </Card>
+  );
 }
